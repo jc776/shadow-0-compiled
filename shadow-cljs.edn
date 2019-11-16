@@ -7,5 +7,5 @@
  {:workshop {:target :browser
              :output-dir "public/workshop/js"
              :asset-path "/js"
-             :modules {:main {:init-fn workshop.client/init!}}
+             :modules {:main {:entries [workshop.client]}}
              :compiler-options {:devcards true}}}}
