@@ -1,7 +1,7 @@
 (ns ^:dev/always workshop.client
   (:require [workshop.thing]))
 
-(def x "a")
+(def x "5")
 
 (defn run []
   (js/console.log x workshop.thing/text (js/Date.)))

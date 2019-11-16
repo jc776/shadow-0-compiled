@@ -1,3 +1,3 @@
 (ns workshop.thing)
 
-(def text "thing")
+(def text "thing5")
