@@ -1,0 +1,9 @@
+start....  
+Date Sat Nov 16 2019 19:56:30 GMT+0000 (Greenwich Mean Time)
+/js/cljs-runtime/workshop.client.js:4:16
+shadow-cljs: WebSocket connected! /js/cljs-runtime/shadow.cljs.devtools.client.browser.js:49:20
+shadow-cljs: REPL session start successful /js/cljs-runtime/shadow.cljs.devtools.client.browser.js:49:20
+BUILD-WARNING in workshop/client.cljs at [4:28]
+	Use of undeclared Var workshop.client/Date /js/cljs-runtime/shadow.cljs.devtools.client.browser.js:426:9
+
+​

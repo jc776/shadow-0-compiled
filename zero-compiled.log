@@ -1,0 +1,67 @@
+PS C:\Jack\Projects\shadow-zero-compiled> clj -A:dev
+user: load shadow.server
+"Elapsed time: 5417.428 msecs"
+user: load shadow
+"Elapsed time: 0.0478 msecs"
+user: start shadow.server
+Nov 16, 2019 7:56:04 PM org.xnio.Xnio <clinit>
+INFO: XNIO version 3.7.3.Final
+Nov 16, 2019 7:56:04 PM org.xnio.nio.NioXnio <clinit>
+INFO: XNIO NIO Implementation Version 3.7.3.Final
+Nov 16, 2019 7:56:04 PM org.jboss.threads.Version <clinit>
+INFO: JBoss Threads version 2.3.2.Final
+shadow-cljs - HTTP server available at http://localhost:8700
+shadow-cljs - server version: 2.8.69 running at http://localhost:9630
+shadow-cljs - nREPL server started on port 54827
+"Elapsed time: 5162.6886 msecs"
+user: ready
+Clojure 1.10.1
+user=> (shadow/watch :workshop)
+[:workshop] Configuring build.
+[:workshop] Compiling ...
+[:workshop] Build completed. (135 files, 134 compiled, 0 warnings, 7.26s)
+:watching
+user=> [:workshop] Compiling ...
+[:workshop] Build completed. (135 files, 0 compiled, 0 warnings, 0.13s)
+[:workshop] Compiling ...
+[:workshop] Build completed. (135 files, 0 compiled, 0 warnings, 0.14s)
+[:workshop] Compiling ...
+[:workshop] Build completed. (135 files, 0 compiled, 0 warnings, 0.14s)
+[:workshop] Compiling ...
+[:workshop] Build completed. (135 files, 0 compiled, 0 warnings, 0.14s)
+[:workshop] Compiling ...
+[:workshop] Build completed. (135 files, 0 compiled, 0 warnings, 0.14s)
+[:workshop] Compiling ...
+[:workshop] Build completed. (135 files, 0 compiled, 0 warnings, 0.13s)
+[:workshop] Compiling ...
+[:workshop] Build completed. (135 files, 0 compiled, 0 warnings, 0.14s)
+[:workshop] Compiling ...
+[:workshop] Build completed. (135 files, 0 compiled, 0 warnings, 0.14s)
+[:workshop] Compiling ...
+[:workshop] Build completed. (135 files, 0 compiled, 0 warnings, 0.13s)
+[:workshop] Compiling ...
+[:workshop] Build completed. (135 files, 0 compiled, 0 warnings, 0.13s)
+[:workshop] Compiling ...
+[:workshop] Build completed. (135 files, 0 compiled, 0 warnings, 0.14s)
+[:workshop] Compiling ...
+[:workshop] Build completed. (135 files, 0 compiled, 0 warnings, 0.13s)
+[:workshop] Compiling ...
+[:workshop] Build completed. (135 files, 0 compiled, 1 warnings, 0.13s)
+
+[1m------ WARNING #1 - :undeclared-var --------------------------------------------[0m
+ File: C:\Jack\Projects\shadow-zero-compiled\src\workshop\client.cljs:4:28
+--------------------------------------------------------------------------------
+[2m   1 | (ns workshop.client)[0m
+[2m   2 | [0m
+[2m   3 | (defn run [][0m
+[1m   4 |   (js/console.log "start " (Date.)))[0m
+----------------------------------^---------------------------------------------
+ [33;1mUse of undeclared Var workshop.client/Date[0m
+--------------------------------------------------------------------------------
+[2m   5 | [0m
+[2m   6 | (defn ^:dev/after-load start! [][0m
+[2m   7 |   (run))[0m
+[2m   8 | [0m
+--------------------------------------------------------------------------------
+[:workshop] Compiling ...
+[:workshop] Build completed. (135 files, 0 compiled, 0 warnings, 0.16s)

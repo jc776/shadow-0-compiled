@@ -1,0 +1,4 @@
+.cpcache/
+.shadow-cljs/
+
+public/workshop/js/
