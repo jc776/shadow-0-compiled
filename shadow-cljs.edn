@@ -1,4 +1,5 @@
-{:deps true
+{:source-paths ["src"]
+ :dependencies []
  
  :dev-http {8700 "public/workshop"}
  
