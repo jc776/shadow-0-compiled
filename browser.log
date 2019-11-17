@@ -1,116 +1,99 @@
 inline /js/cljs-runtime/workshop.client.js:17:9
-aaaaaaaaaaaaaa thing 
-Date Sat Nov 16 2019 23:46:53 GMT+0000 (Greenwich Mean Time)
+0 0 
+Date Sun Nov 17 2019 00:20:03 GMT+0000 (Greenwich Mean Time)
 /js/cljs-runtime/workshop.client.js:6:16
 shadow-cljs: WebSocket connected! /js/cljs-runtime/shadow.cljs.devtools.client.browser.js:49:20
 shadow-cljs: REPL session start successful /js/cljs-runtime/shadow.cljs.devtools.client.browser.js:49:20
 shadow-cljs: call workshop.client/stop /js/cljs-runtime/shadow.cljs.devtools.client.browser.js:49:20
-stop thing /js/cljs-runtime/workshop.client.js:9:16
+stop 0 /js/cljs-runtime/workshop.client.js:9:16
 shadow-cljs: load JS workshop/client.cljs /js/cljs-runtime/shadow.cljs.devtools.client.browser.js:49:20
 inline workshop/client.cljs:17:9
 shadow-cljs: call workshop.client/start! /js/cljs-runtime/shadow.cljs.devtools.client.browser.js:49:20
-1 thing 
-Date Sat Nov 16 2019 23:47:19 GMT+0000 (Greenwich Mean Time)
+2 0 
+Date Sun Nov 17 2019 00:20:25 GMT+0000 (Greenwich Mean Time)
 workshop/client.cljs:6:16
 shadow-cljs: call workshop.client/stop /js/cljs-runtime/shadow.cljs.devtools.client.browser.js:49:20
-stop thing workshop/client.cljs:9:16
+stop 0 workshop/client.cljs:9:16
 shadow-cljs: load JS workshop/client.cljs /js/cljs-runtime/shadow.cljs.devtools.client.browser.js:49:20
 inline workshop/client.cljs:17:9
 shadow-cljs: call workshop.client/start! /js/cljs-runtime/shadow.cljs.devtools.client.browser.js:49:20
-5 thing 
-Date Sat Nov 16 2019 23:47:26 GMT+0000 (Greenwich Mean Time)
+3 0 
+Date Sun Nov 17 2019 00:20:29 GMT+0000 (Greenwich Mean Time)
 workshop/client.cljs:6:16
 shadow-cljs: call workshop.client/stop /js/cljs-runtime/shadow.cljs.devtools.client.browser.js:49:20
-stop thing workshop/client.cljs:9:16
+stop 0 workshop/client.cljs:9:16
+shadow-cljs: load JS workshop/client.cljs /js/cljs-runtime/shadow.cljs.devtools.client.browser.js:49:20
+inline workshop/client.cljs:17:9
+shadow-cljs: call workshop.client/start! /js/cljs-runtime/shadow.cljs.devtools.client.browser.js:49:20
+5 0 
+Date Sun Nov 17 2019 00:20:46 GMT+0000 (Greenwich Mean Time)
+workshop/client.cljs:6:16
+shadow-cljs: call workshop.client/stop /js/cljs-runtime/shadow.cljs.devtools.client.browser.js:49:20
+stop 0 workshop/client.cljs:9:16
+shadow-cljs: load JS workshop/client.cljs /js/cljs-runtime/shadow.cljs.devtools.client.browser.js:49:20
+inline workshop/client.cljs:17:9
+shadow-cljs: call workshop.client/start! /js/cljs-runtime/shadow.cljs.devtools.client.browser.js:49:20
+1 0 
+Date Sun Nov 17 2019 00:20:53 GMT+0000 (Greenwich Mean Time)
+workshop/client.cljs:6:16
+shadow-cljs: call workshop.client/stop /js/cljs-runtime/shadow.cljs.devtools.client.browser.js:49:20
+stop 0 workshop/client.cljs:9:16
+shadow-cljs: load JS workshop/client.cljs /js/cljs-runtime/shadow.cljs.devtools.client.browser.js:49:20
+inline workshop/client.cljs:17:9
+shadow-cljs: call workshop.client/start! /js/cljs-runtime/shadow.cljs.devtools.client.browser.js:49:20
+2 0 
+Date Sun Nov 17 2019 00:20:55 GMT+0000 (Greenwich Mean Time)
+workshop/client.cljs:6:16
+shadow-cljs: call workshop.client/stop /js/cljs-runtime/shadow.cljs.devtools.client.browser.js:49:20
+stop 0 workshop/client.cljs:9:16
+shadow-cljs: load JS workshop/client.cljs /js/cljs-runtime/shadow.cljs.devtools.client.browser.js:49:20
+inline workshop/client.cljs:17:9
+shadow-cljs: call workshop.client/start! /js/cljs-runtime/shadow.cljs.devtools.client.browser.js:49:20
+3 0 
+Date Sun Nov 17 2019 00:20:56 GMT+0000 (Greenwich Mean Time)
+workshop/client.cljs:6:16
+shadow-cljs: call workshop.client/stop /js/cljs-runtime/shadow.cljs.devtools.client.browser.js:49:20
+stop 0 workshop/client.cljs:9:16
+shadow-cljs: load JS workshop/client.cljs /js/cljs-runtime/shadow.cljs.devtools.client.browser.js:49:20
+inline workshop/client.cljs:17:9
+shadow-cljs: call workshop.client/start! /js/cljs-runtime/shadow.cljs.devtools.client.browser.js:49:20
+4 0 
+Date Sun Nov 17 2019 00:20:59 GMT+0000 (Greenwich Mean Time)
+workshop/client.cljs:6:16
+shadow-cljs: call workshop.client/stop /js/cljs-runtime/shadow.cljs.devtools.client.browser.js:49:20
+stop 0 workshop/client.cljs:9:16
 shadow-cljs: load JS workshop/thing.cljs /js/cljs-runtime/shadow.cljs.devtools.client.browser.js:49:20
 shadow-cljs: load JS workshop/client.cljs /js/cljs-runtime/shadow.cljs.devtools.client.browser.js:49:20
 inline workshop/client.cljs:17:9
 shadow-cljs: call workshop.client/start! /js/cljs-runtime/shadow.cljs.devtools.client.browser.js:49:20
-5 thing1 
-Date Sat Nov 16 2019 23:48:19 GMT+0000 (Greenwich Mean Time)
+4 1 
+Date Sun Nov 17 2019 00:21:11 GMT+0000 (Greenwich Mean Time)
 workshop/client.cljs:6:16
 shadow-cljs: call workshop.client/stop /js/cljs-runtime/shadow.cljs.devtools.client.browser.js:49:20
-stop thing1 workshop/client.cljs:9:16
+stop 1 workshop/client.cljs:9:16
 shadow-cljs: load JS workshop/thing.cljs /js/cljs-runtime/shadow.cljs.devtools.client.browser.js:49:20
 shadow-cljs: load JS workshop/client.cljs /js/cljs-runtime/shadow.cljs.devtools.client.browser.js:49:20
 inline workshop/client.cljs:17:9
 shadow-cljs: call workshop.client/start! /js/cljs-runtime/shadow.cljs.devtools.client.browser.js:49:20
-5 thing2 
-Date Sat Nov 16 2019 23:48:21 GMT+0000 (Greenwich Mean Time)
+4 2 
+Date Sun Nov 17 2019 00:21:12 GMT+0000 (Greenwich Mean Time)
 workshop/client.cljs:6:16
 shadow-cljs: call workshop.client/stop /js/cljs-runtime/shadow.cljs.devtools.client.browser.js:49:20
-stop thing2 workshop/client.cljs:9:16
+stop 2 workshop/client.cljs:9:16
 shadow-cljs: load JS workshop/thing.cljs /js/cljs-runtime/shadow.cljs.devtools.client.browser.js:49:20
 shadow-cljs: load JS workshop/client.cljs /js/cljs-runtime/shadow.cljs.devtools.client.browser.js:49:20
 inline workshop/client.cljs:17:9
 shadow-cljs: call workshop.client/start! /js/cljs-runtime/shadow.cljs.devtools.client.browser.js:49:20
-5 thing3 
-Date Sat Nov 16 2019 23:48:22 GMT+0000 (Greenwich Mean Time)
+4 3 
+Date Sun Nov 17 2019 00:21:14 GMT+0000 (Greenwich Mean Time)
 workshop/client.cljs:6:16
 shadow-cljs: call workshop.client/stop /js/cljs-runtime/shadow.cljs.devtools.client.browser.js:49:20
-stop thing3 workshop/client.cljs:9:16
+stop 3 workshop/client.cljs:9:16
 shadow-cljs: load JS workshop/thing.cljs /js/cljs-runtime/shadow.cljs.devtools.client.browser.js:49:20
 shadow-cljs: load JS workshop/client.cljs /js/cljs-runtime/shadow.cljs.devtools.client.browser.js:49:20
 inline workshop/client.cljs:17:9
 shadow-cljs: call workshop.client/start! /js/cljs-runtime/shadow.cljs.devtools.client.browser.js:49:20
-5 thing4 
-Date Sat Nov 16 2019 23:48:24 GMT+0000 (Greenwich Mean Time)
+4 4 
+Date Sun Nov 17 2019 00:21:15 GMT+0000 (Greenwich Mean Time)
 workshop/client.cljs:6:16
-shadow-cljs: call workshop.client/stop /js/cljs-runtime/shadow.cljs.devtools.client.browser.js:49:20
-stop thing4 workshop/client.cljs:9:16
-shadow-cljs: load JS workshop/thing.cljs /js/cljs-runtime/shadow.cljs.devtools.client.browser.js:49:20
-shadow-cljs: load JS workshop/client.cljs /js/cljs-runtime/shadow.cljs.devtools.client.browser.js:49:20
-inline workshop/client.cljs:17:9
-shadow-cljs: call workshop.client/start! /js/cljs-runtime/shadow.cljs.devtools.client.browser.js:49:20
-5 thing5 
-Date Sat Nov 16 2019 23:48:25 GMT+0000 (Greenwich Mean Time)
-workshop/client.cljs:6:16
-shadow-cljs: call workshop.client/stop /js/cljs-runtime/shadow.cljs.devtools.client.browser.js:49:20
-stop thing5 workshop/client.cljs:9:16
-shadow-cljs: load JS workshop/client.cljs /js/cljs-runtime/shadow.cljs.devtools.client.browser.js:49:20
-inline workshop/client.cljs:17:9
-shadow-cljs: call workshop.client/start! /js/cljs-runtime/shadow.cljs.devtools.client.browser.js:49:20
-5 thing5 
-Date Sat Nov 16 2019 23:48:41 GMT+0000 (Greenwich Mean Time)
-workshop/client.cljs:6:16
-shadow-cljs: call workshop.client/stop /js/cljs-runtime/shadow.cljs.devtools.client.browser.js:49:20
-stop thing5 workshop/client.cljs:9:16
-shadow-cljs: load JS workshop/client.cljs /js/cljs-runtime/shadow.cljs.devtools.client.browser.js:49:20
-inline workshop/client.cljs:17:9
-shadow-cljs: call workshop.client/start! /js/cljs-runtime/shadow.cljs.devtools.client.browser.js:49:20
-1 thing5 
-Date Sat Nov 16 2019 23:48:44 GMT+0000 (Greenwich Mean Time)
-workshop/client.cljs:6:16
-shadow-cljs: call workshop.client/stop /js/cljs-runtime/shadow.cljs.devtools.client.browser.js:49:20
-stop thing5 workshop/client.cljs:9:16
-shadow-cljs: load JS workshop/client.cljs /js/cljs-runtime/shadow.cljs.devtools.client.browser.js:49:20
-inline workshop/client.cljs:17:9
-shadow-cljs: call workshop.client/start! /js/cljs-runtime/shadow.cljs.devtools.client.browser.js:49:20
-2 thing5 
-Date Sat Nov 16 2019 23:48:46 GMT+0000 (Greenwich Mean Time)
-workshop/client.cljs:6:16
-shadow-cljs: call workshop.client/stop /js/cljs-runtime/shadow.cljs.devtools.client.browser.js:49:20
-stop thing5 workshop/client.cljs:9:16
-shadow-cljs: load JS workshop/client.cljs /js/cljs-runtime/shadow.cljs.devtools.client.browser.js:49:20
-inline workshop/client.cljs:17:9
-shadow-cljs: call workshop.client/start! /js/cljs-runtime/shadow.cljs.devtools.client.browser.js:49:20
-3 thing5 
-Date Sat Nov 16 2019 23:48:48 GMT+0000 (Greenwich Mean Time)
-workshop/client.cljs:6:16
-shadow-cljs: call workshop.client/stop /js/cljs-runtime/shadow.cljs.devtools.client.browser.js:49:20
-stop thing5 workshop/client.cljs:9:16
-shadow-cljs: load JS workshop/client.cljs /js/cljs-runtime/shadow.cljs.devtools.client.browser.js:49:20
-inline workshop/client.cljs:17:9
-shadow-cljs: call workshop.client/start! /js/cljs-runtime/shadow.cljs.devtools.client.browser.js:49:20
-4 thing5 
-Date Sat Nov 16 2019 23:48:49 GMT+0000 (Greenwich Mean Time)
-workshop/client.cljs:6:16
-shadow-cljs: call workshop.client/stop /js/cljs-runtime/shadow.cljs.devtools.client.browser.js:49:20
-stop thing5 workshop/client.cljs:9:16
-shadow-cljs: load JS workshop/client.cljs /js/cljs-runtime/shadow.cljs.devtools.client.browser.js:49:20
-inline workshop/client.cljs:17:9
-shadow-cljs: call workshop.client/start! /js/cljs-runtime/shadow.cljs.devtools.client.browser.js:49:20
-5 thing5 
-Date Sat Nov 16 2019 23:48:51 GMT+0000 (Greenwich Mean Time)
-workshop/client.cljs:6:16
-shadow-cljs: WebSocket disconnected!
+shadow-cljs: WebSocket disconnected! /js/cljs-runtime/shadow.cljs.devtools.client.browser.js:49:20

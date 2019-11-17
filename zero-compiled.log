@@ -1,129 +1,517 @@
-PS C:\Jack\Projects\shadow-zero-compiled> npx shadow-cljs clj-repl                                                                                                                            shadow-cljs - config: C:\Jack\Projects\shadow-zero-compiled\shadow-cljs.edn  cli version: 2.8.69  node: v12.13.0
-[2019-11-16 23:46:39.641 - FINE] :shadow.cljs.devtools.server/cli-checker-start - {:cli-port 57958}
-[2019-11-16 23:46:40.235 - FINE] :shadow.cljs.devtools.server.nrepl/config
-[2019-11-16 23:46:40.547 - FINE] :shadow.cljs.devtools.server.fs-watch/fs-watch - {:ns shadow.cljs.devtools.server.fs-watch-jvm}
+PS C:\Jack\Projects\shadow-zero-compiled> npx shadow-cljs clj-repl | Tee-Object -FilePath "console.log"
+shadow-cljs - config: C:\Jack\Projects\shadow-zero-compiled\shadow-cljs.edn  cli version: 2.8.69  node: v12.13.0
+[2019-11-17 00:25:42.111 - FINE] :shadow.cljs.devtools.server/cli-checker-start - {:cli-port 58622}
+[2019-11-17 00:25:42.697 - FINE] :shadow.cljs.devtools.server.nrepl/config
+[2019-11-17 00:25:42.995 - FINE] :shadow.cljs.devtools.server.fs-watch/fs-watch - {:ns shadow.cljs.devtools.server.fs-watch-jvm}
 shadow-cljs - HTTP server available at http://localhost:8700
-[2019-11-16 23:46:40.594 - FINE] :shadow.cljs.devtools.server.dev-http/http-serve - {:handler-state {:mime-mappings #object[io.undertow.util.MimeMappings 0x682fc714 "io.undertow.util.MimeMappings@682fc714"], :managers [#object[io.undertow.server.handlers.resource.ClassPathResourceManager 0x63b334fd "io.undertow.server.handlers.resource.ClassPathResourceManager@63b334fd"] #object[io.undertow.server.handlers.resource.PathResourceManager 0x71a509c "io.undertow.server.handlers.resource.PathResourceManager@71a509c"]], :handler #object[shadow.cljs.devtools.server.dev_http$fn$reify__16310 0x49868df8 "shadow.cljs.devtools.server.dev_http$fn$reify__16310@49868df8"]}, :config {:port 8700, :host "0.0.0.0"}, :http-port 8700}
-[2019-11-16 23:46:40.594 - FINE] :shadow.cljs.devtools.server/start
+[2019-11-17 00:25:43.042 - FINE] :shadow.cljs.devtools.server.dev-http/http-serve - {:handler-state {:mime-mappings #object[io.undertow.util.MimeMappings 0x682fc714 "io.undertow.util.MimeMappings@682fc714"], :managers [#object[io.undertow.server.handlers.resource.ClassPathResourceManager 0x63b334fd "io.undertow.server.handlers.resource.ClassPathResourceManager@63b334fd"] #object[io.undertow.server.handlers.resource.PathResourceManager 0x71a509c "io.undertow.server.handlers.resource.PathResourceManager@71a509c"]], :handler #object[shadow.cljs.devtools.server.dev_http$fn$reify__16310 0x49868df8 "shadow.cljs.devtools.server.dev_http$fn$reify__16310@49868df8"]}, :config {:port 8700, :host "0.0.0.0"}, :http-port 8700}
+[2019-11-17 00:25:43.042 - FINE] :shadow.cljs.devtools.server/start
 shadow-cljs - server version: 2.8.69 running at http://localhost:9630
-shadow-cljs - nREPL server started on port 57989
+shadow-cljs - nREPL server started on port 58654
 shadow-cljs - REPL - see (help)
 To quit, type: :repl/quit
-shadow.user=> (shadow/watch :workshop)
-[2019-11-16 23:46:47.158 - FINE] :shadow.cljs.devtools.server.worker/start - {:build-id :workshop, :proc-id #uuid "9ef366eb-9aed-4865-9e65-5d890505fc50"}
+(shadow/watch :workshop {:verbose true})
+[2019-11-17 00:26:02.221 - FINE] :shadow.cljs.devtools.server.worker/start - {:build-id :workshop, :proc-id #uuid "b1522f29-cbee-4b3f-bac4-8cf9d191ff03"}
 [:workshop] Configuring build.
+-> build target: :browser stage: :configure
+<- build target: :browser stage: :configure (0 ms)
 [:workshop] Compiling ...
-[2019-11-16 23:46:47.284 - FINE] :shadow.build.cljs-hacks/replace-fn! - {:the-var #'cljs.analyzer/load-core}
-[2019-11-16 23:46:47.284 - FINE] :shadow.build.cljs-hacks/replace-fn! - {:the-var #'cljs.analyzer/resolve-var}
-[2019-11-16 23:46:47.284 - FINE] :shadow.build.cljs-hacks/replace-fn! - {:the-var #'cljs.compiler/emits}
-[2019-11-16 23:46:47.284 - FINE] :shadow.build.cljs-hacks/replace-fn! - {:the-var #'cljs.compiler/emitln}
-[2019-11-16 23:46:47.284 - FINE] :shadow.build.cljs-hacks/replace-fn! - {:the-var #'cljs.compiler/find-ns-starts-with}
-:watching
-shadow.user=> [:workshop] Build completed. (136 files, 1 compiled, 0 warnings, 1.31s)
-[2019-11-16 23:46:53.115 - FINE] :shadow.cljs.devtools.server.worker.impl/runtime-connect - {:runtime-id "4fb87eb7-6cb2-4a0c-ac22-bd680af9ab4d"}
-[2019-11-16 23:46:53.147 - FINE] :shadow.cljs.devtools.server.worker.impl/runtime-msg - {:runtime-id "4fb87eb7-6cb2-4a0c-ac22-bd680af9ab4d", :type :repl/init-complete}
-[2019-11-16 23:46:53.664 - FINE] :shadow.cljs.devtools.server.worker.impl/runtime-msg - {:runtime-id "4fb87eb7-6cb2-4a0c-ac22-bd680af9ab4d", :type :repl/pong}
-"[2019-11-16 23:47:08.886 - FINE] :shadow.cljs.devtools.server.worker.impl/runtime-msg - {:runtime-id "4fb87eb7-6cb2-4a0c-ac22-bd680af9ab4d", :type :repl/pong}
-shadow.user=> "without dev/always"
+-> Resolving Module: :main
+<- Resolving Module: :main (16 ms)
+-> build target: :browser stage: :compile-prepare
+<- build target: :browser stage: :compile-prepare (0 ms)
+[2019-11-17 00:26:02.346 - FINE] :shadow.build.cljs-hacks/replace-fn! - {:the-var #'cljs.analyzer/load-core}
+[2019-11-17 00:26:02.346 - FINE] :shadow.build.cljs-hacks/replace-fn! - {:the-var #'cljs.analyzer/resolve-var}
+[2019-11-17 00:26:02.346 - FINE] :shadow.build.cljs-hacks/replace-fn! - {:the-var #'cljs.compiler/emits}
+[2019-11-17 00:26:02.346 - FINE] :shadow.build.cljs-hacks/replace-fn! - {:the-var #'cljs.compiler/emitln}
+[2019-11-17 00:26:02.346 - FINE] :shadow.build.cljs-hacks/replace-fn! - {:the-var #'cljs.compiler/find-ns-starts-with}
+-> Closure JS Cache read: 100 JS files
+<- Closure JS Cache read: 100 JS files (31 ms)
+-> Cache read: cljs/core.cljs
+<- Cache read: cljs/core.cljs (29 ms)
+-> Cache read: clojure/string.cljs
+-> Cache read: clojure/walk.cljs
+-> Cache read: cljs/tools/reader/impl/inspect.cljs
+<- Cache read: clojure/string.cljs (18 ms)
+<- Cache read: clojure/walk.cljs (18 ms)
+<- Cache read: cljs/spec/gen/alpha.cljs (19 ms)
+-> Cache read: cljs/pprint.cljs
+-> Cache read: shadow/cljs/devtools/client/console.cljs
+-> Cache read: cljs/spec/alpha.cljs
+<- Cache read: cljs/tools/reader/impl/utils.cljs (5 ms)
+<- Cache read: shadow/cljs/devtools/client/console.cljs (5 ms)
+-> Cache read: cljs/core/async/impl/protocols.cljs
+-> Cache read: cljs/tools/reader/reader_types.cljs
+<- Cache read: cljs/core/async/impl/protocols.cljs (5 ms)
+-> Cache read: cljs/core/async/impl/buffers.cljs
+<- Cache read: cljs/core/async/impl/buffers.cljs (6 ms)
+-> Cache read: cljs/core/async/impl/dispatch.cljs
+<- Cache read: cljs/tools/reader/reader_types.cljs (7 ms)
+-> Cache read: cljs/tools/reader/impl/errors.cljs
+<- Cache read: cljs/core/async/impl/dispatch.cljs (3 ms)
+<- Cache read: cljs/spec/alpha.cljs (21 ms)
+-> Cache read: cljs/core/async/impl/ioc_helpers.cljs
+-> Cache read: cljs/core/async/impl/channels.cljs
+-> Cache read: cljs/repl.cljs
+<- Cache read: cljs/pprint.cljs (45 ms)
+<- Cache read: cljs/repl.cljs (20 ms)
+-> Cache read: clojure/set.cljs
+-> Cache read: cljs/core/async/impl/timers.cljs
+-> Compile CLJS: cljs/user.cljs
+<- Cache read: cljs/tools/reader/impl/errors.cljs (197 ms)
+<- Cache read: cljs/core/async/impl/timers.cljs (167 ms)
+-> Cache read: cljs/tools/reader/impl/commons.cljs
+-> Cache read: cljs/core/async.cljs
+-> Cache read: clojure/data.cljs
+<- Compile CLJS: cljs/user.cljs (172 ms)
+<- Cache read: cljs/tools/reader/impl/commons.cljs (3 ms)
+-> Cache read: cljs/tools/reader.cljs
+<- Cache read: clojure/data.cljs (2 ms)
+<- Cache read: cljs/core/async.cljs (19 ms)
+-> Cache read: workshop/thing.cljs
+-> Cache read: shadow/dom.cljs
+-> Cache read: shadow/util.cljs
+<- Cache read: cljs/tools/reader.cljs (20 ms)
+-> Cache read: cljs/tools/reader/edn.cljs
+-> Cache read: shadow/cljs/devtools/client/env.cljs
+-> Compile CLJS: workshop/client.cljs
+<- Compile CLJS: workshop/thing.cljs (9 ms)
+-> Cache write: workshop/thing.cljs
+<- Cache read: shadow/cljs/devtools/client/env.cljs (7 ms)
+<- Cache read: shadow/util.cljs (15 ms)
+-> Cache read: cljs/reader.cljs
+<- Cache read: shadow/dom.cljs (28 ms)
+-> Cache read: shadow/object.cljs
+<- Cache read: cljs/reader.cljs (15 ms)
+<- Compile CLJS: workshop/client.cljs (25 ms)
+<- Cache read: shadow/object.cljs (6 ms)
+<- Cache write: workshop/thing.cljs (27 ms)
+-> Cache read: shadow/xhr.cljs
+-> Cache read: shadow/animate.cljs
+<- Cache read: shadow/xhr.cljs (6 ms)
+<- Cache read: shadow/animate.cljs (6 ms)
+-> Cache read: shadow/cljs/devtools/client/hud.cljs
+<- Cache read: shadow/cljs/devtools/client/hud.cljs (5 ms)
+-> Cache read: shadow/cljs/devtools/client/browser.cljs
+<- Cache read: shadow/cljs/devtools/client/browser.cljs (0 ms)
+-> build target: :browser stage: :compile-finish
+<- build target: :browser stage: :compile-finish (0 ms)
+-> build target: :browser stage: :flush
+-> Flush: cljs/user.cljs
+-> Flushing unoptimized modules
+-> Flush: workshop/client.cljs
+<- Flush: shadow/module/main/append.js (0 ms)
+<- Flush: workshop/thing.cljs (0 ms)
+<- Flush: cljs/user.cljs (0 ms)
+<- Flushing unoptimized modules (93 ms)
+<- build target: :browser stage: :flush (109 ms)
+[:workshop] Build completed. (136 files, 3 compiled, 0 warnings, 1.32s)
+shadow.user=> :watching
+[2019-11-17 00:26:13.588 - FINE] :shadow.cljs.devtools.server.worker.impl/runtime-connect - {:runtime-id "39a6fa48-575f-46a8-bb2a-d991894a2ec1"}
+[2019-11-17 00:26:13.619 - FINE] :shadow.cljs.devtools.server.worker.impl/runtime-msg - {:runtime-id "39a6fa48-575f-46a8-bb2a-d991894a2ec1", :type :repl/init-complete}
+[2019-11-17 00:26:14.120 - FINE] :shadow.cljs.devtools.server.worker.impl/runtime-msg - {:runtime-id "39a6fa48-575f-46a8-bb2a-d991894a2ec1", :type :repl/pong}
+
 "without dev/always"
-shadow.user=> [2019-11-16 23:47:19.088 - FINE] :shadow.cljs.devtools.server.reload-classpath/classpath-update-count - {:count 1}
-[2019-11-16 23:47:19.088 - FINE] :shadow.cljs.devtools.server.reload-classpath/classpath-update - {:dir #object[java.io.File 0x7454159f "C:\\Jack\\Projects\\shadow-zero-compiled\\src"], :name "workshop\\client.cljs", :ext "cljs", :file #object[java.io.File 0x4989965a "C:\\Jack\\Projects\\shadow-zero-compiled\\src\\workshop\\client.cljs"], :event :mod}
-[2019-11-16 23:47:19.103 - FINE] :shadow.cljs.model/resource-update - {:namespaces #{workshop.client}, :deleted #{}, :updated #{workshop.client}, :added #{}}
+shadow.user=> shadow.user=> "without dev/always"
+[2019-11-17 00:26:29.357 - FINE] :shadow.cljs.devtools.server.worker.impl/runtime-msg - {:runtime-id "39a6fa48-575f-46a8-bb2a-d991894a2ec1", :type :repl/pong}
+[2019-11-17 00:26:35.357 - FINE] :shadow.cljs.devtools.server.reload-classpath/classpath-update-count - {:count 1}
+[2019-11-17 00:26:35.357 - FINE] :shadow.cljs.devtools.server.reload-classpath/classpath-update - {:dir #object[java.io.File 0x44a49041 "C:\\Jack\\Projects\\shadow-zero-compiled\\src"], :name "workshop\\client.cljs", :ext "cljs", :file #object[java.io.File 0x51dfa8be "C:\\Jack\\Projects\\shadow-zero-compiled\\src\\workshop\\client.cljs"], :event :mod}
+[2019-11-17 00:26:35.372 - FINE] :shadow.cljs.model/resource-update - {:namespaces #{workshop.client}, :deleted #{}, :updated #{workshop.client}, :added #{}}
 [:workshop] Compiling ...
-[:workshop] Build completed. (136 files, 1 compiled, 0 warnings, 0.08s)
-[2019-11-16 23:47:21.089 - FINE] :shadow.cljs.devtools.server.reload-classpath/classpath-update-count - {:count 1}
-[2019-11-16 23:47:21.089 - FINE] :shadow.cljs.devtools.server.reload-classpath/classpath-update - {:dir #object[java.io.File 0x7454159f "C:\\Jack\\Projects\\shadow-zero-compiled\\src"], :name "workshop\\client.cljs", :ext "cljs", :file #object[java.io.File 0x41e8c00b "C:\\Jack\\Projects\\shadow-zero-compiled\\src\\workshop\\client.cljs"], :event :mod}
-[2019-11-16 23:47:21.089 - FINE] :shadow.cljs.model/resource-update - {:namespaces #{workshop.client}, :deleted #{}, :updated #{workshop.client}, :added #{}}
-[:workshop] Compiling ...
+-> Resolving Module: :main
+<- Resolving Module: :main (0 ms)
+-> build target: :browser stage: :compile-prepare
+<- build target: :browser stage: :compile-prepare (0 ms)
+-> Compile CLJS: workshop/client.cljs
+<- Compile CLJS: workshop/client.cljs (0 ms)
+-> Cache write: workshop/client.cljs
+<- Cache write: workshop/client.cljs (16 ms)
+-> build target: :browser stage: :compile-finish
+<- build target: :browser stage: :compile-finish (0 ms)
+-> build target: :browser stage: :flush
+-> Flushing unoptimized modules
+<- Flush: shadow/module/main/append.js (15 ms)
+<- Flush: workshop/client.cljs (15 ms)
+<- Flushing unoptimized modules (31 ms)
+<- build target: :browser stage: :flush (31 ms)
 [:workshop] Build completed. (136 files, 0 compiled, 0 warnings, 0.06s)
-[2019-11-16 23:47:23.121 - FINE] :shadow.cljs.devtools.server.reload-classpath/classpath-update-count - {:count 1}
-[2019-11-16 23:47:23.121 - FINE] :shadow.cljs.devtools.server.reload-classpath/classpath-update - {:dir #object[java.io.File 0x7454159f "C:\\Jack\\Projects\\shadow-zero-compiled\\src"], :name "workshop\\client.cljs", :ext "cljs", :file #object[java.io.File 0x53bd205d "C:\\Jack\\Projects\\shadow-zero-compiled\\src\\workshop\\client.cljs"], :event :mod}
-[2019-11-16 23:47:23.121 - FINE] :shadow.cljs.model/resource-update - {:namespaces #{workshop.client}, :deleted #{}, :updated #{workshop.client}, :added #{}}
+[2019-11-17 00:26:44.525 - FINE] :shadow.cljs.devtools.server.worker.impl/runtime-msg - {:runtime-id "39a6fa48-575f-46a8-bb2a-d991894a2ec1", :type :repl/pong}
+[2019-11-17 00:26:45.949 - FINE] :shadow.cljs.devtools.server.reload-classpath/classpath-update-count - {:count 1}
+[2019-11-17 00:26:45.949 - FINE] :shadow.cljs.devtools.server.reload-classpath/classpath-update - {:dir #object[java.io.File 0x44a49041 "C:\\Jack\\Projects\\shadow-zero-compiled\\src"], :name "workshop\\client.cljs", :ext "cljs", :file #object[java.io.File 0x2a751b8b "C:\\Jack\\Projects\\shadow-zero-compiled\\src\\workshop\\client.cljs"], :event :mod}
+[2019-11-17 00:26:45.949 - FINE] :shadow.cljs.model/resource-update - {:namespaces #{workshop.client}, :deleted #{}, :updated #{workshop.client}, :added #{}}
 [:workshop] Compiling ...
+-> Resolving Module: :main
+<- Resolving Module: :main (16 ms)
+-> build target: :browser stage: :compile-prepare
+<- build target: :browser stage: :compile-prepare (0 ms)
+-> Compile CLJS: workshop/client.cljs
+<- Compile CLJS: workshop/client.cljs (0 ms)
+-> Cache write: workshop/client.cljs
+<- Cache write: workshop/client.cljs (15 ms)
+-> build target: :browser stage: :compile-finish
+-> build target: :browser stage: :flush
+-> Flushing unoptimized modules
+-> Flush: workshop/client.cljs
+-> Flush: shadow/module/main/append.js
+<- Flush: shadow/module/main/append.js (0 ms)
+<- Flush: workshop/client.cljs (0 ms)
+<- Flushing unoptimized modules (32 ms)
+<- build target: :browser stage: :flush (32 ms)
+[:workshop] Build completed. (136 files, 0 compiled, 0 warnings, 0.08s)
+[2019-11-17 00:26:48.965 - FINE] :shadow.cljs.devtools.server.reload-classpath/classpath-update-count - {:count 1}
+[2019-11-17 00:26:48.965 - FINE] :shadow.cljs.devtools.server.reload-classpath/classpath-update - {:dir #object[java.io.File 0x44a49041 "C:\\Jack\\Projects\\shadow-zero-compiled\\src"], :name "workshop\\client.cljs", :ext "cljs", :file #object[java.io.File 0x54988e8d "C:\\Jack\\Projects\\shadow-zero-compiled\\src\\workshop\\client.cljs"], :event :mod}
+[2019-11-17 00:26:48.965 - FINE] :shadow.cljs.model/resource-update - {:namespaces #{workshop.client}, :deleted #{}, :updated #{workshop.client}, :added #{}}
+[:workshop] Compiling ...
+-> Resolving Module: :main
+<- Resolving Module: :main (16 ms)
+-> build target: :browser stage: :compile-prepare
+<- build target: :browser stage: :compile-prepare (0 ms)
+-> Compile CLJS: workshop/client.cljs
+<- Compile CLJS: workshop/client.cljs (21 ms)
+-> Cache write: workshop/client.cljs
+<- Cache write: workshop/client.cljs (2 ms)
+-> build target: :browser stage: :compile-finish
+<- build target: :browser stage: :compile-finish (0 ms)
+-> build target: :browser stage: :flush
+-> Flushing unoptimized modules
+-> Flush: workshop/client.cljs
+<- Flush: shadow/module/main/append.js (15 ms)
+<- Flush: workshop/client.cljs (15 ms)
+<- Flushing unoptimized modules (31 ms)
+<- build target: :browser stage: :flush (31 ms)
+[:workshop] Build completed. (136 files, 1 compiled, 0 warnings, 0.07s)
+[2019-11-17 00:26:52.013 - FINE] :shadow.cljs.devtools.server.reload-classpath/classpath-update-count - {:count 1}
+[2019-11-17 00:26:52.013 - FINE] :shadow.cljs.devtools.server.reload-classpath/classpath-update - {:dir #object[java.io.File 0x44a49041 "C:\\Jack\\Projects\\shadow-zero-compiled\\src"], :name "workshop\\client.cljs", :ext "cljs", :file #object[java.io.File 0x7fa4283e "C:\\Jack\\Projects\\shadow-zero-compiled\\src\\workshop\\client.cljs"], :event :mod}
+[2019-11-17 00:26:52.013 - FINE] :shadow.cljs.model/resource-update - {:namespaces #{workshop.client}, :deleted #{}, :updated #{workshop.client}, :added #{}}
+[:workshop] Compiling ...
+-> Resolving Module: :main
+<- Resolving Module: :main (16 ms)
+-> build target: :browser stage: :compile-prepare
+<- build target: :browser stage: :compile-prepare (0 ms)
+-> Compile CLJS: workshop/client.cljs
+<- Compile CLJS: workshop/client.cljs (0 ms)
+-> Cache write: workshop/client.cljs
+<- Cache write: workshop/client.cljs (16 ms)
+-> build target: :browser stage: :compile-finish
+<- build target: :browser stage: :compile-finish (0 ms)
+-> build target: :browser stage: :flush
+-> Flushing unoptimized modules
+-> Flush: shadow/module/main/append.js
+-> Flush: workshop/client.cljs
+<- Flush: shadow/module/main/append.js (0 ms)
+<- Flush: workshop/client.cljs (16 ms)
+<- Flushing unoptimized modules (31 ms)
+<- build target: :browser stage: :flush (31 ms)
+[:workshop] Build completed. (136 files, 0 compiled, 0 warnings, 0.08s)
+[2019-11-17 00:26:54.530 - FINE] :shadow.cljs.devtools.server.reload-classpath/classpath-update-count - {:count 1}
+[2019-11-17 00:26:54.530 - FINE] :shadow.cljs.devtools.server.reload-classpath/classpath-update - {:dir #object[java.io.File 0x44a49041 "C:\\Jack\\Projects\\shadow-zero-compiled\\src"], :name "workshop\\client.cljs", :ext "cljs", :file #object[java.io.File 0x4e770efd "C:\\Jack\\Projects\\shadow-zero-compiled\\src\\workshop\\client.cljs"], :event :mod}
+[2019-11-17 00:26:54.530 - FINE] :shadow.cljs.model/resource-update - {:namespaces #{workshop.client}, :deleted #{}, :updated #{workshop.client}, :added #{}}
+[:workshop] Compiling ...
+-> Resolving Module: :main
+<- Resolving Module: :main (15 ms)
+-> build target: :browser stage: :compile-prepare
+<- build target: :browser stage: :compile-prepare (0 ms)
+-> Compile CLJS: workshop/client.cljs
+<- Compile CLJS: workshop/client.cljs (0 ms)
+-> Cache write: workshop/client.cljs
+<- Cache write: workshop/client.cljs (15 ms)
+-> build target: :browser stage: :compile-finish
+<- build target: :browser stage: :compile-finish (0 ms)
+-> build target: :browser stage: :flush
+-> Flushing unoptimized modules
+-> Flush: shadow/module/main/append.js
+-> Flush: workshop/client.cljs
+<- Flush: shadow/module/main/append.js (16 ms)
+<- Flush: workshop/client.cljs (0 ms)
+<- Flushing unoptimized modules (32 ms)
+<- build target: :browser stage: :flush (32 ms)
 [:workshop] Build completed. (136 files, 0 compiled, 0 warnings, 0.06s)
-[2019-11-16 23:47:24.192 - FINE] :shadow.cljs.devtools.server.worker.impl/runtime-msg - {:runtime-id "4fb87eb7-6cb2-4a0c-ac22-bd680af9ab4d", :type :repl/pong}
-[2019-11-16 23:47:24.631 - FINE] :shadow.cljs.devtools.server.reload-classpath/classpath-update-count - {:count 1}
-[2019-11-16 23:47:24.631 - FINE] :shadow.cljs.devtools.server.reload-classpath/classpath-update - {:dir #object[java.io.File 0x7454159f "C:\\Jack\\Projects\\shadow-zero-compiled\\src"], :name "workshop\\client.cljs", :ext "cljs", :file #object[java.io.File 0x75a59946 "C:\\Jack\\Projects\\shadow-zero-compiled\\src\\workshop\\client.cljs"], :event :mod}
-[2019-11-16 23:47:24.631 - FINE] :shadow.cljs.model/resource-update - {:namespaces #{workshop.client}, :deleted #{}, :updated #{workshop.client}, :added #{}}
+[2019-11-17 00:26:57.049 - FINE] :shadow.cljs.devtools.server.reload-classpath/classpath-update-count - {:count 1}
+[2019-11-17 00:26:57.049 - FINE] :shadow.cljs.devtools.server.reload-classpath/classpath-update - {:dir #object[java.io.File 0x44a49041 "C:\\Jack\\Projects\\shadow-zero-compiled\\src"], :name "workshop\\client.cljs", :ext "cljs", :file #object[java.io.File 0x4c5cedfb "C:\\Jack\\Projects\\shadow-zero-compiled\\src\\workshop\\client.cljs"], :event :mod}
+[2019-11-17 00:26:57.049 - FINE] :shadow.cljs.model/resource-update - {:namespaces #{workshop.client}, :deleted #{}, :updated #{workshop.client}, :added #{}}
 [:workshop] Compiling ...
-[:workshop] Build completed. (136 files, 0 compiled, 0 warnings, 0.09s)
-[2019-11-16 23:47:26.663 - FINE] :shadow.cljs.devtools.server.reload-classpath/classpath-update-count - {:count 1}
-[2019-11-16 23:47:26.663 - FINE] :shadow.cljs.devtools.server.reload-classpath/classpath-update - {:dir #object[java.io.File 0x7454159f "C:\\Jack\\Projects\\shadow-zero-compiled\\src"], :name "workshop\\client.cljs", :ext "cljs", :file #object[java.io.File 0x25374058 "C:\\Jack\\Projects\\shadow-zero-compiled\\src\\workshop\\client.cljs"], :event :mod}
-[2019-11-16 23:47:26.663 - FINE] :shadow.cljs.model/resource-update - {:namespaces #{workshop.client}, :deleted #{}, :updated #{workshop.client}, :added #{}}
-[:workshop] Compiling ...
-[:workshop] Build completed. (136 files, 1 compiled, 0 warnings, 0.06s)
-[2019-11-16 23:47:39.379 - FINE] :shadow.cljs.devtools.server.worker.impl/runtime-msg - {:runtime-id "4fb87eb7-6cb2-4a0c-ac22-bd680af9ab4d", :type :repl/pong}
+-> Resolving Module: :main
+<- Resolving Module: :main (0 ms)
+-> build target: :browser stage: :compile-prepare
+<- build target: :browser stage: :compile-prepare (0 ms)
+-> Compile CLJS: workshop/client.cljs
+<- Compile CLJS: workshop/client.cljs (0 ms)
+-> Cache write: workshop/client.cljs
+<- Cache write: workshop/client.cljs (16 ms)
+-> build target: :browser stage: :compile-finish
+<- build target: :browser stage: :compile-finish (0 ms)
+-> build target: :browser stage: :flush
+-> Flushing unoptimized modules
+-> Flush: workshop/client.cljs
+-> Flush: shadow/module/main/append.js
+<- Flush: shadow/module/main/append.js (0 ms)
+<- Flush: workshop/client.cljs (0 ms)
+<- Flushing unoptimized modules (16 ms)
+<- build target: :browser stage: :flush (47 ms)
+[:workshop] Build completed. (136 files, 0 compiled, 0 warnings, 0.08s)
+[2019-11-17 00:26:59.684 - FINE] :shadow.cljs.devtools.server.worker.impl/runtime-msg - {:runtime-id "39a6fa48-575f-46a8-bb2a-d991894a2ec1", :type :repl/pong}
 
-shadow.user=> [2019-11-16 23:47:54.602 - FINE] :shadow.cljs.devtools.server.worker.impl/runtime-msg - {:runtime-id "4fb87eb7-6cb2-4a0c-ac22-bd680af9ab4d", :type :repl/pong}
 
-shadow.user=> "edit required [2019-11-16 23:48:09.776 - FINE] :shadow.cljs.devtools.server.worker.impl/runtime-msg - {:runtime-id "4fb87eb7-6cb2-4a0c-ac22-bd680af9ab4d", :type :repl/pong}
-ns"
-"edit required ns"
-shadow.user=> [2019-11-16 23:48:18.859 - FINE] :shadow.cljs.devtools.server.reload-classpath/classpath-update-count - {:count 1}
-[2019-11-16 23:48:18.859 - FINE] :shadow.cljs.devtools.server.reload-classpath/classpath-update - {:dir #object[java.io.File 0x7454159f "C:\\Jack\\Projects\\shadow-zero-compiled\\src"], :name "workshop\\thing.cljs", :ext "cljs", :file #object[java.io.File 0x2258346d "C:\\Jack\\Projects\\shadow-zero-compiled\\src\\workshop\\thing.cljs"], :event :mod}
-[2019-11-16 23:48:18.859 - FINE] :shadow.cljs.model/resource-update - {:namespaces #{workshop.thing}, :deleted #{}, :updated #{workshop.thing}, :added #{}}
-[:workshop] Compiling ...
-[:workshop] Build completed. (136 files, 2 compiled, 0 warnings, 0.06s)
-[2019-11-16 23:48:20.883 - FINE] :shadow.cljs.devtools.server.reload-classpath/classpath-update-count - {:count 1}
-[2019-11-16 23:48:20.883 - FINE] :shadow.cljs.devtools.server.reload-classpath/classpath-update - {:dir #object[java.io.File 0x7454159f "C:\\Jack\\Projects\\shadow-zero-compiled\\src"], :name "workshop\\thing.cljs", :ext "cljs", :file #object[java.io.File 0x185d57b3 "C:\\Jack\\Projects\\shadow-zero-compiled\\src\\workshop\\thing.cljs"], :event :mod}
-[2019-11-16 23:48:20.883 - FINE] :shadow.cljs.model/resource-update - {:namespaces #{workshop.thing}, :deleted #{}, :updated #{workshop.thing}, :added #{}}
-[:workshop] Compiling ...
-[:workshop] Build completed. (136 files, 2 compiled, 0 warnings, 0.06s)
-[2019-11-16 23:48:22.398 - FINE] :shadow.cljs.devtools.server.reload-classpath/classpath-update-count - {:count 1}
-[2019-11-16 23:48:22.398 - FINE] :shadow.cljs.devtools.server.reload-classpath/classpath-update - {:dir #object[java.io.File 0x7454159f "C:\\Jack\\Projects\\shadow-zero-compiled\\src"], :name "workshop\\thing.cljs", :ext "cljs", :file #object[java.io.File 0x416b9257 "C:\\Jack\\Projects\\shadow-zero-compiled\\src\\workshop\\thing.cljs"], :event :mod}
-[2019-11-16 23:48:22.398 - FINE] :shadow.cljs.model/resource-update - {:namespaces #{workshop.thing}, :deleted #{}, :updated #{workshop.thing}, :added #{}}
-[:workshop] Compiling ...
-[:workshop] Build completed. (136 files, 2 compiled, 0 warnings, 0.07s)
-[2019-11-16 23:48:23.923 - FINE] :shadow.cljs.devtools.server.reload-classpath/classpath-update-count - {:count 1}
-[2019-11-16 23:48:23.923 - FINE] :shadow.cljs.devtools.server.reload-classpath/classpath-update - {:dir #object[java.io.File 0x7454159f "C:\\Jack\\Projects\\shadow-zero-compiled\\src"], :name "workshop\\thing.cljs", :ext "cljs", :file #object[java.io.File 0x5ec12fa2 "C:\\Jack\\Projects\\shadow-zero-compiled\\src\\workshop\\thing.cljs"], :event :mod}
-[2019-11-16 23:48:23.923 - FINE] :shadow.cljs.model/resource-update - {:namespaces #{workshop.thing}, :deleted #{}, :updated #{workshop.thing}, :added #{}}
-[:workshop] Compiling ...
-[:workshop] Build completed. (136 files, 2 compiled, 0 warnings, 0.06s)
-[2019-11-16 23:48:24.995 - FINE] :shadow.cljs.devtools.server.worker.impl/runtime-msg - {:runtime-id "4fb87eb7-6cb2-4a0c-ac22-bd680af9ab4d", :type :repl/pong}
-[2019-11-16 23:48:25.434 - FINE] :shadow.cljs.devtools.server.reload-classpath/classpath-update-count - {:count 1}
-[2019-11-16 23:48:25.434 - FINE] :shadow.cljs.devtools.server.reload-classpath/classpath-update - {:dir #object[java.io.File 0x7454159f "C:\\Jack\\Projects\\shadow-zero-compiled\\src"], :name "workshop\\thing.cljs", :ext "cljs", :file #object[java.io.File 0x3d59934b "C:\\Jack\\Projects\\shadow-zero-compiled\\src\\workshop\\thing.cljs"], :event :mod}
-[2019-11-16 23:48:25.434 - FINE] :shadow.cljs.model/resource-update - {:namespaces #{workshop.thing}, :deleted #{}, :updated #{workshop.thing}, :added #{}}
-[:workshop] Compiling ...
-[:workshop] Build completed. (136 files, 2 compiled, 0 warnings, 0.08s)
-
-shadow.user=> "with dev/always"
 "with dev/always"
-shadow.user=> [2019-11-16 23:48:40.143 - FINE] :shadow.cljs.devtools.server.worker.impl/runtime-msg - {:runtime-id "4fb87eb7-6cb2-4a0c-ac22-bd680af9ab4d", :type :repl/pong}
-[2019-11-16 23:48:41.128 - FINE] :shadow.cljs.devtools.server.reload-classpath/classpath-update-count - {:count 1}
-[2019-11-16 23:48:41.128 - FINE] :shadow.cljs.devtools.server.reload-classpath/classpath-update - {:dir #object[java.io.File 0x7454159f "C:\\Jack\\Projects\\shadow-zero-compiled\\src"], :name "workshop\\client.cljs", :ext "cljs", :file #object[java.io.File 0x4f4bab9c "C:\\Jack\\Projects\\shadow-zero-compiled\\src\\workshop\\client.cljs"], :event :mod}
-[2019-11-16 23:48:41.128 - FINE] :shadow.cljs.model/resource-update - {:namespaces #{workshop.client}, :deleted #{}, :updated #{workshop.client}, :added #{}}
+shadow.user=> shadow.user=> shadow.user=> "with dev/always"
+[2019-11-17 00:27:14.854 - FINE] :shadow.cljs.devtools.server.worker.impl/runtime-msg - {:runtime-id "39a6fa48-575f-46a8-bb2a-d991894a2ec1", :type :repl/pong}
+[2019-11-17 00:27:19.208 - FINE] :shadow.cljs.devtools.server.reload-classpath/classpath-update-count - {:count 1}
+[2019-11-17 00:27:19.208 - FINE] :shadow.cljs.devtools.server.reload-classpath/classpath-update - {:dir #object[java.io.File 0x44a49041 "C:\\Jack\\Projects\\shadow-zero-compiled\\src"], :name "workshop\\client.cljs", :ext "cljs", :file #object[java.io.File 0x5c20fe1b "C:\\Jack\\Projects\\shadow-zero-compiled\\src\\workshop\\client.cljs"], :event :mod}
+[2019-11-17 00:27:19.208 - FINE] :shadow.cljs.model/resource-update - {:namespaces #{workshop.client}, :deleted #{}, :updated #{workshop.client}, :added #{}}
 [:workshop] Compiling ...
-[:workshop] Build completed. (136 files, 1 compiled, 0 warnings, 0.05s)
-[2019-11-16 23:48:44.668 - FINE] :shadow.cljs.devtools.server.reload-classpath/classpath-update-count - {:count 1}
-[2019-11-16 23:48:44.668 - FINE] :shadow.cljs.devtools.server.reload-classpath/classpath-update - {:dir #object[java.io.File 0x7454159f "C:\\Jack\\Projects\\shadow-zero-compiled\\src"], :name "workshop\\client.cljs", :ext "cljs", :file #object[java.io.File 0x52af7108 "C:\\Jack\\Projects\\shadow-zero-compiled\\src\\workshop\\client.cljs"], :event :mod}
-[2019-11-16 23:48:44.668 - FINE] :shadow.cljs.model/resource-update - {:namespaces #{workshop.client}, :deleted #{}, :updated #{workshop.client}, :added #{}}
-[:workshop] Compiling ...
+-> Resolving Module: :main
+<- Resolving Module: :main (15 ms)
+-> build target: :browser stage: :compile-prepare
+<- build target: :browser stage: :compile-prepare (0 ms)
+-> Compile CLJS: workshop/client.cljs
+<- Compile CLJS: workshop/client.cljs (0 ms)
+-> build target: :browser stage: :compile-finish
+<- build target: :browser stage: :compile-finish (0 ms)
+-> build target: :browser stage: :flush
+-> Flushing unoptimized modules
+-> Flush: workshop/client.cljs
+-> Flush: shadow/module/main/append.js
+<- Flush: workshop/client.cljs (0 ms)
+<- Flushing unoptimized modules (15 ms)
+<- build target: :browser stage: :flush (15 ms)
 [:workshop] Build completed. (136 files, 0 compiled, 0 warnings, 0.05s)
-[2019-11-16 23:48:46.193 - FINE] :shadow.cljs.devtools.server.reload-classpath/classpath-update-count - {:count 1}
-[2019-11-16 23:48:46.193 - FINE] :shadow.cljs.devtools.server.reload-classpath/classpath-update - {:dir #object[java.io.File 0x7454159f "C:\\Jack\\Projects\\shadow-zero-compiled\\src"], :name "workshop\\client.cljs", :ext "cljs", :file #object[java.io.File 0x5c4f8c0 "C:\\Jack\\Projects\\shadow-zero-compiled\\src\\workshop\\client.cljs"], :event :mod}
-[2019-11-16 23:48:46.193 - FINE] :shadow.cljs.model/resource-update - {:namespaces #{workshop.client}, :deleted #{}, :updated #{workshop.client}, :added #{}}
+[2019-11-17 00:27:22.748 - FINE] :shadow.cljs.devtools.server.reload-classpath/classpath-update-count - {:count 1}
+[2019-11-17 00:27:22.748 - FINE] :shadow.cljs.devtools.server.reload-classpath/classpath-update - {:dir #object[java.io.File 0x44a49041 "C:\\Jack\\Projects\\shadow-zero-compiled\\src"], :name "workshop\\client.cljs", :ext "cljs", :file #object[java.io.File 0x21bc879 "C:\\Jack\\Projects\\shadow-zero-compiled\\src\\workshop\\client.cljs"], :event :mod}
+[2019-11-17 00:27:22.748 - FINE] :shadow.cljs.model/resource-update - {:namespaces #{workshop.client}, :deleted #{}, :updated #{workshop.client}, :added #{}}
 [:workshop] Compiling ...
-[:workshop] Build completed. (136 files, 0 compiled, 0 warnings, 0.05s)
-[2019-11-16 23:48:48.225 - FINE] :shadow.cljs.devtools.server.reload-classpath/classpath-update-count - {:count 1}
-[2019-11-16 23:48:48.225 - FINE] :shadow.cljs.devtools.server.reload-classpath/classpath-update - {:dir #object[java.io.File 0x7454159f "C:\\Jack\\Projects\\shadow-zero-compiled\\src"], :name "workshop\\client.cljs", :ext "cljs", :file #object[java.io.File 0x7476e0f8 "C:\\Jack\\Projects\\shadow-zero-compiled\\src\\workshop\\client.cljs"], :event :mod}
-[2019-11-16 23:48:48.225 - FINE] :shadow.cljs.model/resource-update - {:namespaces #{workshop.client}, :deleted #{}, :updated #{workshop.client}, :added #{}}
-[:workshop] Compiling ...
-[:workshop] Build completed. (136 files, 0 compiled, 0 warnings, 0.05s)
-[2019-11-16 23:48:49.740 - FINE] :shadow.cljs.devtools.server.reload-classpath/classpath-update-count - {:count 1}
-[2019-11-16 23:48:49.740 - FINE] :shadow.cljs.devtools.server.reload-classpath/classpath-update - {:dir #object[java.io.File 0x7454159f "C:\\Jack\\Projects\\shadow-zero-compiled\\src"], :name "workshop\\client.cljs", :ext "cljs", :file #object[java.io.File 0x6673a2a1 "C:\\Jack\\Projects\\shadow-zero-compiled\\src\\workshop\\client.cljs"], :event :mod}
-[2019-11-16 23:48:49.740 - FINE] :shadow.cljs.model/resource-update - {:namespaces #{workshop.client}, :deleted #{}, :updated #{workshop.client}, :added #{}}
-[:workshop] Compiling ...
-[:workshop] Build completed. (136 files, 0 compiled, 0 warnings, 0.05s)
-[2019-11-16 23:48:51.244 - FINE] :shadow.cljs.devtools.server.reload-classpath/classpath-update-count - {:count 1}
-[2019-11-16 23:48:51.244 - FINE] :shadow.cljs.devtools.server.reload-classpath/classpath-update - {:dir #object[java.io.File 0x7454159f "C:\\Jack\\Projects\\shadow-zero-compiled\\src"], :name "workshop\\client.cljs", :ext "cljs", :file #object[java.io.File 0x4f7da856 "C:\\Jack\\Projects\\shadow-zero-compiled\\src\\workshop\\client.cljs"], :event :mod}
-[2019-11-16 23:48:51.244 - FINE] :shadow.cljs.model/resource-update - {:namespaces #{workshop.client}, :deleted #{}, :updated #{workshop.client}, :added #{}}
-[:workshop] Compiling ...
+-> Resolving Module: :main
+<- Resolving Module: :main (16 ms)
+-> build target: :browser stage: :compile-prepare
+<- build target: :browser stage: :compile-prepare (0 ms)
+-> Compile CLJS: workshop/client.cljs
+<- Compile CLJS: workshop/client.cljs (16 ms)
+-> build target: :browser stage: :compile-finish
+<- build target: :browser stage: :compile-finish (0 ms)
+-> build target: :browser stage: :flush
+-> Flushing unoptimized modules
+-> Flush: shadow/module/main/append.js
+-> Flush: workshop/client.cljs
+<- Flush: shadow/module/main/append.js (0 ms)
+<- Flush: workshop/client.cljs (0 ms)
+<- Flushing unoptimized modules (31 ms)
+<- build target: :browser stage: :flush (31 ms)
 [:workshop] Build completed. (136 files, 1 compiled, 0 warnings, 0.06s)
-[2019-11-16 23:48:55.334 - FINE] :shadow.cljs.devtools.server.worker.impl/runtime-msg - {:runtime-id "4fb87eb7-6cb2-4a0c-ac22-bd680af9ab4d", :type :repl/pong}
+[2019-11-17 00:27:25.289 - FINE] :shadow.cljs.devtools.server.reload-classpath/classpath-update-count - {:count 1}
+[2019-11-17 00:27:25.289 - FINE] :shadow.cljs.devtools.server.reload-classpath/classpath-update - {:dir #object[java.io.File 0x44a49041 "C:\\Jack\\Projects\\shadow-zero-compiled\\src"], :name "workshop\\client.cljs", :ext "cljs", :file #object[java.io.File 0x74ed3e21 "C:\\Jack\\Projects\\shadow-zero-compiled\\src\\workshop\\client.cljs"], :event :mod}
+[2019-11-17 00:27:25.289 - FINE] :shadow.cljs.model/resource-update - {:namespaces #{workshop.client}, :deleted #{}, :updated #{workshop.client}, :added #{}}
+[:workshop] Compiling ...
+-> Resolving Module: :main
+<- Resolving Module: :main (15 ms)
+-> build target: :browser stage: :compile-prepare
+<- build target: :browser stage: :compile-prepare (0 ms)
+-> Compile CLJS: workshop/client.cljs
+<- Compile CLJS: workshop/client.cljs (15 ms)
+-> build target: :browser stage: :compile-finish
+<- build target: :browser stage: :compile-finish (0 ms)
+-> build target: :browser stage: :flush
+-> Flushing unoptimized modules
+-> Flush: shadow/module/main/append.js
+-> Flush: workshop/client.cljs
+<- Flush: shadow/module/main/append.js (0 ms)
+<- Flush: workshop/client.cljs (0 ms)
+<- Flushing unoptimized modules (16 ms)
+<- build target: :browser stage: :flush (16 ms)
+[:workshop] Build completed. (136 files, 1 compiled, 0 warnings, 0.05s)
+[2019-11-17 00:27:26.812 - FINE] :shadow.cljs.devtools.server.reload-classpath/classpath-update-count - {:count 1}
+[2019-11-17 00:27:26.812 - FINE] :shadow.cljs.devtools.server.reload-classpath/classpath-update - {:dir #object[java.io.File 0x44a49041 "C:\\Jack\\Projects\\shadow-zero-compiled\\src"], :name "workshop\\client.cljs", :ext "cljs", :file #object[java.io.File 0x5ff53672 "C:\\Jack\\Projects\\shadow-zero-compiled\\src\\workshop\\client.cljs"], :event :mod}
+[2019-11-17 00:27:26.812 - FINE] :shadow.cljs.model/resource-update - {:namespaces #{workshop.client}, :deleted #{}, :updated #{workshop.client}, :added #{}}
+[:workshop] Compiling ...
+-> Resolving Module: :main
+<- Resolving Module: :main (16 ms)
+-> build target: :browser stage: :compile-prepare
+<- build target: :browser stage: :compile-prepare (0 ms)
+-> Compile CLJS: workshop/client.cljs
+<- Compile CLJS: workshop/client.cljs (16 ms)
+-> build target: :browser stage: :compile-finish
+<- build target: :browser stage: :compile-finish (0 ms)
+-> Flushing unoptimized modules
+-> Flush: shadow/module/main/append.js
+-> Flush: workshop/client.cljs
+<- Flush: shadow/module/main/append.js (0 ms)
+<- Flush: workshop/client.cljs (0 ms)
+<- Flushing unoptimized modules (15 ms)
+<- build target: :browser stage: :flush (15 ms)
+[:workshop] Build completed. (136 files, 1 compiled, 0 warnings, 0.05s)
+[2019-11-17 00:27:28.834 - FINE] :shadow.cljs.devtools.server.reload-classpath/classpath-update-count - {:count 1}
+[2019-11-17 00:27:28.834 - FINE] :shadow.cljs.devtools.server.reload-classpath/classpath-update - {:dir #object[java.io.File 0x44a49041 "C:\\Jack\\Projects\\shadow-zero-compiled\\src"], :name "workshop\\client.cljs", :ext "cljs", :file #object[java.io.File 0x47ecbb1 "C:\\Jack\\Projects\\shadow-zero-compiled\\src\\workshop\\client.cljs"], :event :mod}
+[2019-11-17 00:27:28.834 - FINE] :shadow.cljs.model/resource-update - {:namespaces #{workshop.client}, :deleted #{}, :updated #{workshop.client}, :added #{}}
+[:workshop] Compiling ...
+-> Resolving Module: :main
+<- Resolving Module: :main (16 ms)
+-> build target: :browser stage: :compile-prepare
+<- build target: :browser stage: :compile-prepare (0 ms)
+-> Compile CLJS: workshop/client.cljs
+<- Compile CLJS: workshop/client.cljs (0 ms)
+-> build target: :browser stage: :compile-finish
+<- build target: :browser stage: :compile-finish (0 ms)
+-> build target: :browser stage: :flush
+-> Flushing unoptimized modules
+-> Flush: shadow/module/main/append.js
+-> Flush: workshop/client.cljs
+<- Flush: shadow/module/main/append.js (0 ms)
+<- Flush: workshop/client.cljs (0 ms)
+<- Flushing unoptimized modules (16 ms)
+<- build target: :browser stage: :flush (16 ms)
+[:workshop] Build completed. (136 files, 0 compiled, 0 warnings, 0.05s)
+[2019-11-17 00:27:29.881 - FINE] :shadow.cljs.devtools.server.worker.impl/runtime-msg - {:runtime-id "39a6fa48-575f-46a8-bb2a-d991894a2ec1", :type :repl/pong}
+[2019-11-17 00:27:30.353 - FINE] :shadow.cljs.devtools.server.reload-classpath/classpath-update-count - {:count 1}
+[2019-11-17 00:27:30.353 - FINE] :shadow.cljs.devtools.server.reload-classpath/classpath-update - {:dir #object[java.io.File 0x44a49041 "C:\\Jack\\Projects\\shadow-zero-compiled\\src"], :name "workshop\\client.cljs", :ext "cljs", :file #object[java.io.File 0x587a9347 "C:\\Jack\\Projects\\shadow-zero-compiled\\src\\workshop\\client.cljs"], :event :mod}
+[2019-11-17 00:27:30.353 - FINE] :shadow.cljs.model/resource-update - {:namespaces #{workshop.client}, :deleted #{}, :updated #{workshop.client}, :added #{}}
+[:workshop] Compiling ...
+-> Resolving Module: :main
+<- Resolving Module: :main (16 ms)
+-> build target: :browser stage: :compile-prepare
+<- build target: :browser stage: :compile-prepare (0 ms)
+-> Compile CLJS: workshop/client.cljs
+<- Compile CLJS: workshop/client.cljs (15 ms)
+-> build target: :browser stage: :compile-finish
+<- build target: :browser stage: :compile-finish (0 ms)
+-> build target: :browser stage: :flush
+-> Flushing unoptimized modules
+-> Flush: shadow/module/main/append.js
+-> Flush: workshop/client.cljs
+<- Flush: shadow/module/main/append.js (0 ms)
+<- Flush: workshop/client.cljs (0 ms)
+<- Flushing unoptimized modules (16 ms)
+<- build target: :browser stage: :flush (31 ms)
+[:workshop] Build completed. (136 files, 1 compiled, 0 warnings, 0.06s)
 
-shadow.user=> ^Z
-shutting down ...
-[2019-11-16 23:48:58.685 - FINE] :shadow.cljs.devtools.server.worker.impl/runtime-disconnect - {:runtime-id "4fb87eb7-6cb2-4a0c-ac22-bd680af9ab4d"}
+
+"edit required ns"
+shadow.user=> shadow.user=> shadow.user=> "edit required ns"
+[2019-11-17 00:27:45.014 - FINE] :shadow.cljs.devtools.server.worker.impl/runtime-msg - {:runtime-id "39a6fa48-575f-46a8-bb2a-d991894a2ec1", :type :repl/pong}
+[2019-11-17 00:27:47.014 - FINE] :shadow.cljs.devtools.server.reload-classpath/classpath-update-count - {:count 1}
+[2019-11-17 00:27:47.014 - FINE] :shadow.cljs.devtools.server.reload-classpath/classpath-update - {:dir #object[java.io.File 0x44a49041 "C:\\Jack\\Projects\\shadow-zero-compiled\\src"], :name "workshop\\thing.cljs", :ext "cljs", :file #object[java.io.File 0x457bb25f "C:\\Jack\\Projects\\shadow-zero-compiled\\src\\workshop\\thing.cljs"], :event :mod}
+[2019-11-17 00:27:47.014 - FINE] :shadow.cljs.model/resource-update - {:namespaces #{workshop.thing}, :deleted #{}, :updated #{workshop.thing}, :added #{}}
+[:workshop] Compiling ...
+-> Resolving Module: :main
+<- Resolving Module: :main (16 ms)
+-> build target: :browser stage: :compile-prepare
+<- build target: :browser stage: :compile-prepare (0 ms)
+-> Compile CLJS: workshop/thing.cljs
+<- Compile CLJS: workshop/thing.cljs (1 ms)
+-> Cache write: workshop/thing.cljs
+-> Compile CLJS: workshop/client.cljs
+<- Cache write: workshop/thing.cljs (5 ms)
+<- Compile CLJS: workshop/client.cljs (0 ms)
+-> build target: :browser stage: :compile-finish
+<- build target: :browser stage: :compile-finish (0 ms)
+-> build target: :browser stage: :flush
+-> Flushing unoptimized modules
+-> Flush: workshop/thing.cljs
+-> Flush: shadow/module/main/append.js
+<- Flush: shadow/module/main/append.js (0 ms)
+<- Flush: workshop/thing.cljs (16 ms)
+<- Flush: workshop/client.cljs (16 ms)
+<- Flushing unoptimized modules (31 ms)
+<- build target: :browser stage: :flush (31 ms)
+[:workshop] Build completed. (136 files, 2 compiled, 0 warnings, 0.06s)
+[2019-11-17 00:27:48.539 - FINE] :shadow.cljs.devtools.server.reload-classpath/classpath-update-count - {:count 1}
+[2019-11-17 00:27:48.539 - FINE] :shadow.cljs.devtools.server.reload-classpath/classpath-update - {:dir #object[java.io.File 0x44a49041 "C:\\Jack\\Projects\\shadow-zero-compiled\\src"], :name "workshop\\thing.cljs", :ext "cljs", :file #object[java.io.File 0x33cb5a24 "C:\\Jack\\Projects\\shadow-zero-compiled\\src\\workshop\\thing.cljs"], :event :mod}
+[2019-11-17 00:27:48.539 - FINE] :shadow.cljs.model/resource-update - {:namespaces #{workshop.thing}, :deleted #{}, :updated #{workshop.thing}, :added #{}}
+[:workshop] Compiling ...
+-> Resolving Module: :main
+<- Resolving Module: :main (15 ms)
+-> build target: :browser stage: :compile-prepare
+<- build target: :browser stage: :compile-prepare (0 ms)
+-> Compile CLJS: workshop/thing.cljs
+<- Compile CLJS: workshop/thing.cljs (1 ms)
+-> Cache write: workshop/thing.cljs
+-> Compile CLJS: workshop/client.cljs
+<- Cache write: workshop/thing.cljs (5 ms)
+<- Compile CLJS: workshop/client.cljs (0 ms)
+-> build target: :browser stage: :compile-finish
+<- build target: :browser stage: :compile-finish (0 ms)
+-> build target: :browser stage: :flush
+-> Flushing unoptimized modules
+<- Flush: workshop/client.cljs (0 ms)
+<- Flushing unoptimized modules (16 ms)
+<- build target: :browser stage: :flush (16 ms)
+[:workshop] Build completed. (136 files, 2 compiled, 0 warnings, 0.05s)
+[2019-11-17 00:27:50.054 - FINE] :shadow.cljs.devtools.server.reload-classpath/classpath-update-count - {:count 1}
+[2019-11-17 00:27:50.054 - FINE] :shadow.cljs.devtools.server.reload-classpath/classpath-update - {:dir #object[java.io.File 0x44a49041 "C:\\Jack\\Projects\\shadow-zero-compiled\\src"], :name "workshop\\thing.cljs", :ext "cljs", :file #object[java.io.File 0x411a2caf "C:\\Jack\\Projects\\shadow-zero-compiled\\src\\workshop\\thing.cljs"], :event :mod}
+[2019-11-17 00:27:50.054 - FINE] :shadow.cljs.model/resource-update - {:namespaces #{workshop.thing}, :deleted #{}, :updated #{workshop.thing}, :added #{}}
+[:workshop] Compiling ...
+-> Resolving Module: :main
+<- Resolving Module: :main (16 ms)
+-> build target: :browser stage: :compile-prepare
+<- build target: :browser stage: :compile-prepare (0 ms)
+-> Compile CLJS: workshop/thing.cljs
+<- Compile CLJS: workshop/thing.cljs (1 ms)
+-> Cache write: workshop/thing.cljs
+-> Compile CLJS: workshop/client.cljs
+<- Cache write: workshop/thing.cljs (5 ms)
+<- Compile CLJS: workshop/client.cljs (0 ms)
+-> build target: :browser stage: :compile-finish
+<- build target: :browser stage: :compile-finish (0 ms)
+-> build target: :browser stage: :flush
+-> Flushing unoptimized modules
+-> Flush: workshop/thing.cljs
+-> Flush: workshop/client.cljs
+<- Flush: workshop/client.cljs (0 ms)
+<- Flushing unoptimized modules (32 ms)
+<- build target: :browser stage: :flush (32 ms)
+[:workshop] Build completed. (136 files, 2 compiled, 0 warnings, 0.06s)
+[2019-11-17 00:27:51.084 - FINE] :shadow.cljs.devtools.server.reload-classpath/classpath-update-count - {:count 1}
+[2019-11-17 00:27:51.084 - FINE] :shadow.cljs.devtools.server.reload-classpath/classpath-update - {:dir #object[java.io.File 0x44a49041 "C:\\Jack\\Projects\\shadow-zero-compiled\\src"], :name "workshop\\thing.cljs", :ext "cljs", :file #object[java.io.File 0x4d766f60 "C:\\Jack\\Projects\\shadow-zero-compiled\\src\\workshop\\thing.cljs"], :event :mod}
+[2019-11-17 00:27:51.084 - FINE] :shadow.cljs.model/resource-update - {:namespaces #{workshop.thing}, :deleted #{}, :updated #{workshop.thing}, :added #{}}
+[:workshop] Compiling ...
+-> Resolving Module: :main
+<- Resolving Module: :main (16 ms)
+-> build target: :browser stage: :compile-prepare
+<- build target: :browser stage: :compile-prepare (0 ms)
+-> Compile CLJS: workshop/thing.cljs
+<- Compile CLJS: workshop/thing.cljs (1 ms)
+-> Cache write: workshop/thing.cljs
+-> Compile CLJS: workshop/client.cljs
+<- Cache write: workshop/thing.cljs (4 ms)
+<- Compile CLJS: workshop/client.cljs (0 ms)
+-> build target: :browser stage: :compile-finish
+<- build target: :browser stage: :compile-finish (0 ms)
+-> build target: :browser stage: :flush
+-> Flushing unoptimized modules
+-> Flush: workshop/client.cljs
+-> Flush: shadow/module/main/append.js
+<- Flush: shadow/module/main/append.js (0 ms)
+<- Flush: workshop/thing.cljs (0 ms)
+<- Flush: workshop/client.cljs (0 ms)
+<- Flushing unoptimized modules (31 ms)
+<- build target: :browser stage: :flush (31 ms)
+[:workshop] Build completed. (136 files, 2 compiled, 0 warnings, 0.06s)
+[2019-11-17 00:27:52.609 - FINE] :shadow.cljs.devtools.server.reload-classpath/classpath-update-count - {:count 1}
+[2019-11-17 00:27:52.609 - FINE] :shadow.cljs.devtools.server.reload-classpath/classpath-update - {:dir #object[java.io.File 0x44a49041 "C:\\Jack\\Projects\\shadow-zero-compiled\\src"], :name "workshop\\thing.cljs", :ext "cljs", :file #object[java.io.File 0x5507d5db "C:\\Jack\\Projects\\shadow-zero-compiled\\src\\workshop\\thing.cljs"], :event :mod}
+[2019-11-17 00:27:52.609 - FINE] :shadow.cljs.model/resource-update - {:namespaces #{workshop.thing}, :deleted #{}, :updated #{workshop.thing}, :added #{}}
+[:workshop] Compiling ...
+-> Resolving Module: :main
+<- Resolving Module: :main (15 ms)
+-> build target: :browser stage: :compile-prepare
+<- build target: :browser stage: :compile-prepare (0 ms)
+-> Compile CLJS: workshop/thing.cljs
+-> Cache write: workshop/thing.cljs
+-> Compile CLJS: workshop/client.cljs
+<- Cache write: workshop/thing.cljs (5 ms)
+<- Compile CLJS: workshop/client.cljs (0 ms)
+-> build target: :browser stage: :compile-finish
+<- build target: :browser stage: :compile-finish (0 ms)
+-> build target: :browser stage: :flush
+-> Flushing unoptimized modules
+-> Flush: workshop/thing.cljs
+<- Flush: shadow/module/main/append.js (0 ms)
+<- Flush: workshop/client.cljs (0 ms)
+<- Flush: workshop/thing.cljs (0 ms)
+<- Flushing unoptimized modules (16 ms)
+<- build target: :browser stage: :flush (16 ms)
+[:workshop] Build completed. (136 files, 2 compiled, 0 warnings, 0.05s)
+[2019-11-17 00:28:00.288 - FINE] :shadow.cljs.devtools.server.worker.impl/runtime-msg - {:runtime-id "39a6fa48-575f-46a8-bb2a-d991894a2ec1", :type :repl/pong}
+
+^Z
+shadow.user=> shadow.user=> shutting down ...
+[2019-11-17 00:28:01.352 - FINE] :shadow.cljs.devtools.server.worker.impl/runtime-disconnect - {:runtime-id "39a6fa48-575f-46a8-bb2a-d991894a2ec1"}
 Worker shutdown.
-[2019-11-16 23:48:59.395 - FINE] :shadow.cljs.devtools.server.worker/stop - {:build-id :workshop, :proc-id #uuid "9ef366eb-9aed-4865-9e65-5d890505fc50"}
-PS C:\Jack\Projects\shadow-zero-compiled>   
+[2019-11-17 00:28:02.041 - FINE] :shadow.cljs.devtools.server.worker/stop - {:build-id :workshop, :proc-id #uuid "b1522f29-cbee-4b3f-bac4-8cf9d191ff03"}
+PS C:\Jack\Projects\shadow-zero-compiled>
