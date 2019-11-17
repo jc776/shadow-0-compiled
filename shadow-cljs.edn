@@ -1,6 +1,9 @@
-{:deps true
+{:source-paths ["src"]
+ :dependencies []
  
  :dev-http {8700 "public/workshop"}
+ 
+ :log {:level :debug}
  
  :builds
  {:workshop {:target :browser
